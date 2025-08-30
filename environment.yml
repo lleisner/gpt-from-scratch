@@ -1,0 +1,40 @@
+name: gpt-from-scratch
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  # Core scientific stack
+  - numpy
+  - pandas
+  - scikit-learn
+  - tqdm
+  - matplotlib
+  # Jupyter + export
+  - jupyterlab
+  - nbconvert
+  - ipykernel
+  # Linting / testing (nice-to-have)
+  - ruff
+  - pytest
+  # PyTorch (choose ONE of the following blocks)
+
+  # --- Option A: CPU-only PyTorch ---
+  - pytorch
+  - torchvision
+  - torchaudio
+  - cpuonly
+
+  # --- Option B: GPU (CUDA 12.1) PyTorch ---
+  # - pytorch
+  # - torchvision
+  # - torchaudio
+  # - pytorch-cuda=12.1
+  # End PyTorch choice
+
+  # (Optional) use pip for editable install of your package
+  - pip
+  - pip:
+      - -e .

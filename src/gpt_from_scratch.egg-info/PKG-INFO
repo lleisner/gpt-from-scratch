@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: gpt-from-scratch
+Version: 0.1.0
+Summary: Educational project: BPE, N-gram, neural embeddings, GPT from scratch
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown

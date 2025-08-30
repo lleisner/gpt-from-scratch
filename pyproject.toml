@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpt-from-scratch"
+version = "0.1.0"
+description = "Educational project: BPE, N-gram, neural embeddings, GPT from scratch"
+readme = "README.md"
+requires-python = ">=3.11"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

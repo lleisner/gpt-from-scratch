@@ -1,0 +1,12 @@
+# data & artifacts
+/data/*
+!/data/README.md
+/results/*
+!.gitkeep
+# python
+__pycache__/
+*.pyc
+# jupyter
+.ipynb_checkpoints/
+# envs
+.env
