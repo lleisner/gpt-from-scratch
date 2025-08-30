@@ -1,12 +1,25 @@
-# data & artifacts
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build artifacts
+*.egg-info/
+build/
+dist/
+
+# Conda / venv
+.env
+.venv/
+*.conda
+*.env
+
+# Data and results
 /data/*
 !/data/README.md
 /results/*
 !.gitkeep
-# python
-__pycache__/
-*.pyc
-# jupyter
-.ipynb_checkpoints/
-# envs
-.env
